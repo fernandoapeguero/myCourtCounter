@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.android.keepscore.MainActivity">
+
+
+
+
+    <Button
+        style="@style/scoreText"
+        android:id="@+id/basketball"
+        android:text="@string/basket"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#D32F2F"
+        />
+
+    <Button
+        style="@style/scoreText"
+        android:id="@+id/soccer"
+        android:text="@string/soccer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#388E3C"
+        />
+
+
+
+
+
+
+
+</LinearLayout>

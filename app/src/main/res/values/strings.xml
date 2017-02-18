@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">KeepScore</string>
+    <string name="basket">Basketball</string>
+    <string name="soccer">Soccer</string>
+    <string name="football">Football</string>
+    <string name="three">3+ Points</string>
+    <string name="two">2+ Points</string>
+    <string name="one">Free Throw</string>
+    <string name="goal">Goal</string>
+    <string name="reset">Reset</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="foul">Foul</string>
+    <string name="eject">Eject</string>
+
+</resources>
