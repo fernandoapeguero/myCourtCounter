@@ -13,44 +13,31 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
-       basketball();
-         soccer();
-
+        basketball();
+        soccer();
     }
 
     public void basketball (){
+        Button basketball = (Button) findViewById(R.id.basketball);
 
-
-      Button basketball = (Button) findViewById(R.id.basketball);
-
-       basketball.setOnClickListener(new View.OnClickListener() {
-           @Override
-           public void onClick(View v) {
+        basketball.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
                 Intent ball = new Intent(MainActivity.this,Basketball.class);
                 startActivity(ball);
-           }
+            }
         });
+    }
 
+    public void soccer(){
+        final Button soccer = (Button) findViewById(R.id.soccer);
 
-  }
-
-
-   public void soccer(){
-
-       final Button soccer = (Button) findViewById(R.id.soccer);
-
-       soccer.setOnClickListener(new View.OnClickListener() {
-           @Override
-           public void onClick(View v) {
-               Intent goal = new Intent(MainActivity.this, com.example.android.keepscore.soccer.class);
+        soccer.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent goal = new Intent(MainActivity.this, com.example.android.keepscore.soccer.class);
                 startActivity(goal);
             }
         });
-
-
     }
-
-
-
 }

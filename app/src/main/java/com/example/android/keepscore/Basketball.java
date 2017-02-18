@@ -1,7 +1,7 @@
 package com.example.android.keepscore;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.KeyEvent;
 import android.view.View;
 import android.view.inputmethod.EditorInfo;
@@ -21,7 +21,6 @@ public class Basketball extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.basketball);
 
-
         setTextTeamA();
         setTextTeamB();
 
@@ -35,8 +34,6 @@ public class Basketball extends AppCompatActivity {
         threePointTeamB();
         twoPointTeamB();
         onePointTeamB();
-
-
     }
 
 
@@ -55,30 +52,24 @@ public class Basketball extends AppCompatActivity {
                     teamNameA.setText(result);
                     edit.clearFocus();
                     edit.setText("");
-
-
-
                     return true;
                 }
                 return false;
             }
         });
-
-
-
-
     }
 
 
-    public void setTextTeamB(){
-
-
+    public void setTextTeamB()
+    {
         final EditText edit = (EditText) findViewById(R.id.edit_text_teamB);
         final TextView name = (TextView) findViewById(R.id.team_b_name);
 
-        edit.setOnEditorActionListener(new TextView.OnEditorActionListener() {
+        edit.setOnEditorActionListener(new TextView.OnEditorActionListener()
+        {
             @Override
-            public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
+            public boolean onEditorAction(TextView v, int actionId, KeyEvent event)
+            {
                 if (actionId == EditorInfo.IME_ACTION_DONE){
                     String result = edit.getText().toString();
                     name.setText(result);
@@ -86,28 +77,24 @@ public class Basketball extends AppCompatActivity {
                     edit.setText("");
                     return true;
                 }
-
                 return false;
             }
         });
-
-
     }
 
     public void reset(){
 
         Button resetIt = (Button) findViewById(R.id.reset_basketball);
-
-        resetIt.setOnClickListener(new View.OnClickListener() {
+        resetIt.setOnClickListener(new View.OnClickListener()
+        {
             @Override
-            public void onClick(View v) {
+            public void onClick(View v)
+            {
 
                 scoreTeamA = 0;
                 scoreTeamB = 0;
                 displayScoreTeamA(scoreTeamA);
                 displayScoreTeamB(scoreTeamB);
-
-
             }
         });
 
@@ -118,17 +105,16 @@ public class Basketball extends AppCompatActivity {
 
 
 
-    public void displayScoreTeamA(int Score){
+    public void displayScoreTeamA(int Score) {
 
         TextView score = (TextView) findViewById(R.id.score_team_1);
         score.setText(String.valueOf(Score));
 
     }
 
-    public void threePointTeamA(){
+    public void threePointTeamA() {
 
         Button threePoint = (Button) findViewById(R.id.three_points_a);
-
         threePoint.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -136,13 +122,11 @@ public class Basketball extends AppCompatActivity {
                 displayScoreTeamA(scoreTeamA);
             }
         });
-
     }
 
     public  void twoPointTeamA(){
 
         Button twoPoints = (Button) findViewById(R.id.two_points_a);
-
         twoPoints.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -151,15 +135,10 @@ public class Basketball extends AppCompatActivity {
                 displayScoreTeamA(scoreTeamA);
             }
         });
-
-
-
-
     }
 
     public void onePointTeamA() {
         Button onePoint = (Button) findViewById(R.id.one_point_a);
-
         onePoint.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -167,8 +146,6 @@ public class Basketball extends AppCompatActivity {
                 displayScoreTeamA(scoreTeamA);
             }
         });
-
-
     }
 
     // teamb display and score updater
@@ -177,13 +154,11 @@ public class Basketball extends AppCompatActivity {
 
         TextView score = (TextView) findViewById(R.id.score_team_2);
         score.setText(String.valueOf(Score));
-
     }
 
     public void threePointTeamB(){
 
         Button threePoints = (Button) findViewById(R.id.three_points_b);
-
         threePoints.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -191,31 +166,23 @@ public class Basketball extends AppCompatActivity {
                 displayScoreTeamB(scoreTeamB);
             }
         });
-
-
     }
 
     public  void twoPointTeamB(){
 
         Button twoPoints = (Button) findViewById(R.id.two_points_b);
-
         twoPoints.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 scoreTeamB += 2;
                 displayScoreTeamB(scoreTeamB);
-
-
             }
         });
-
-
     }
 
     public void onePointTeamB(){
 
         Button onePoint = (Button) findViewById(R.id.one_point_b);
-
         onePoint.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -223,6 +190,5 @@ public class Basketball extends AppCompatActivity {
                 displayScoreTeamB(scoreTeamB);
             }
         });
-
     }
 }

@@ -39,13 +39,12 @@ public class soccer extends AppCompatActivity {
         // increment of foul and ejection button listener team b
          increaseFoulTeamB();
          increaseEjectionsTeamB();
-
-
     }
 
 
 
     public void displaySoccerTeamA(int score){
+
         TextView goal = (TextView) findViewById(R.id.soccer_goal_a);
         goal.setText(String.valueOf(score));
 
@@ -54,7 +53,6 @@ public class soccer extends AppCompatActivity {
 
 
     public void teamAGoal(){
-
 
         Button goal = (Button) findViewById(R.id.goal_team_a);
 
@@ -65,8 +63,6 @@ public class soccer extends AppCompatActivity {
                 displaySoccerTeamA(goalTeamA);
             }
         });
-
-
     }
 
 
@@ -84,15 +80,12 @@ public class soccer extends AppCompatActivity {
         TextView foulsTeamA = (TextView) findViewById(R.id.Fouls_counter_teamA);
         foulsTeamA.setText(String.valueOf(foul));
 
-
-
     }
 
     public void displayEjectionsTeamA(int ejections ){
 
         TextView ejectionsTeamA = (TextView) findViewById(R.id.ejections_counter_teamA);
         ejectionsTeamA.setText(String.valueOf(ejections));
-
 
     }
 
@@ -108,13 +101,8 @@ public class soccer extends AppCompatActivity {
 
                 foulsTeamA += 1;
                 displayFoulsTeamA( foulsTeamA);
-
             }
         });
-
-
-
-
     }
 
     /// increment for ejections team A
@@ -129,8 +117,6 @@ public class soccer extends AppCompatActivity {
                 displayEjectionsTeamA(ejectionsFoTeamA);
             }
         });
-
-
     }
 
  /// display fouls team B
@@ -154,11 +140,8 @@ public class soccer extends AppCompatActivity {
             public void onClick(View v) {
                 foulsTeamB += 1;
                 displayFoulsTeamB(foulsTeamB);
-
             }
         });
-
-
     }
 
    // display the ejections counter
@@ -167,8 +150,6 @@ public class soccer extends AppCompatActivity {
 
         TextView ejectionTextSeter = (TextView) findViewById(R.id.ejections_counter_teamB);
         ejectionTextSeter.setText(String.valueOf(ejectionCount));
-
-
 
     }
 
@@ -180,9 +161,6 @@ public class soccer extends AppCompatActivity {
             public void onClick(View v) {
                 ejectionsFoTeamB += 1;
                 displayEjectionTeamB(ejectionsFoTeamB);
-
-
-
             }
         });
 
@@ -198,15 +176,12 @@ public class soccer extends AppCompatActivity {
                 displaySoccerTeamB(goalTeamB);
             }
         });
-
-
     }
 
 
     public void reset () {
 
         Button reset = (Button) findViewById(R.id.soccer_reset);
-
         reset.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -221,11 +196,7 @@ public class soccer extends AppCompatActivity {
                 foulsTeamB = 0 ;
                 ejectionsFoTeamB =0 ;
 
-
-
-
-               // team a display values after reset
-
+                // team a display values after reset
                 displaySoccerTeamA(goalTeamA);
                 displayFoulsTeamA(foulsTeamA);
                 displayEjectionsTeamA(ejectionsFoTeamA);
@@ -237,15 +208,5 @@ public class soccer extends AppCompatActivity {
 
             }
         });
-
-
-
     }
-
-
-
-
-
-
-
 }

@@ -5,18 +5,15 @@
     android:id="@+id/activity_soccer"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
     android:orientation="vertical"
     tools:context="com.example.android.keepscore.soccer">
 
     <View
-        android:layout_centerHorizontal="true"
-        android:background="@android:color/darker_gray"
         android:layout_width="1dp"
         android:layout_height="400dp"
-        android:layout_marginTop="60dp"/>
-
-
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:background="@android:color/darker_gray"/>
 
     <TextView
         android:id="@+id/header"
@@ -28,11 +25,9 @@
         android:textSize="56sp"
         android:textStyle="bold"/>
 
-
     <Button
         android:id="@+id/soccer_reset"
         android:layout_width="wrap_content"
-
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
@@ -42,13 +37,12 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_below="@+id/header"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true">
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/header"
+        android:orientation="horizontal">
 
         <LinearLayout
-
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -83,7 +77,6 @@
                     android:hint="  Fouls                Ejections"/>
 
                 <LinearLayout
-
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
@@ -105,7 +98,6 @@
                         android:gravity="center_horizontal"
                         android:text="0"
                         android:textSize="24sp"/>
-
                 </LinearLayout>
 
             </LinearLayout>
@@ -113,42 +105,38 @@
             <Button
                 android:id="@+id/goal_team_a"
                 style="@style/ballStyle"
-                android:text="@string/goal"
-                />
-
+                android:text="@string/goal"/>
 
             <LinearLayout
-
-                android:paddingTop="8dp"
-                android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="8dp">
 
                 <Button
                     android:id="@+id/foul_button_team_a"
-                    android:text="@string/foul"
-                    android:layout_margin="8dp"
                     android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
                     android:layout_weight="1"
                     android:fontFamily="sans-serif-medium"
-                    android:layout_height="wrap_content"/>
+                    android:text="@string/foul"/>
+
 
                 <Button
                     android:id="@+id/eject_button_team_a"
-                    android:fontFamily="sans-serif-medium"
-                    android:text="@string/eject"
-                    android:layout_margin="8dp"
                     android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
                     android:layout_weight="1"
-                    android:layout_height="wrap_content"/>
+                    android:fontFamily="sans-serif-medium"
+                    android:text="@string/eject"/>
 
-                </LinearLayout>
+            </LinearLayout>
 
         </LinearLayout>
 
-
         <LinearLayout
-
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -183,7 +171,6 @@
                     android:hint="  Fouls                Ejections"/>
 
                 <LinearLayout
-
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
@@ -213,33 +200,31 @@
             <Button
                 android:id="@+id/goal_team_b"
                 style="@style/ballStyle"
-                android:text="@string/goal"
+                android:text="@string/goal"/>
 
-                />
             <LinearLayout
-
-                android:paddingTop="8dp"
-                android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="8dp">
 
                 <Button
                     android:id="@+id/foul_button_teamB"
-                    android:text="@string/foul"
-                    android:layout_margin="8dp"
                     android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
                     android:layout_weight="1"
                     android:fontFamily="sans-serif-medium"
-                    android:layout_height="wrap_content"/>
+                    android:text="@string/foul"/>
 
                 <Button
                     android:id="@+id/eject_button_team_b"
-                    android:fontFamily="sans-serif-medium"
-                    android:text="@string/eject"
-                    android:layout_margin="8dp"
                     android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
                     android:layout_weight="1"
-                    android:layout_height="wrap_content"/>
+                    android:fontFamily="sans-serif-medium"
+                    android:text="@string/eject"/>
 
             </LinearLayout>
 
