@@ -16,20 +16,7 @@
         android:layout_height="400dp"
         android:layout_marginTop="60dp"/>
 
-    <View
-        android:layout_centerHorizontal="true"
-        android:background="@android:color/darker_gray"
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_marginTop="60dp"/>
-
-    <View
-        android:layout_centerHorizontal="true"
-        android:background="@android:color/darker_gray"
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="55dp"/>
+   
 
     <TextView
         android:id="@+id/header"
@@ -113,35 +100,9 @@
             <Button
                 android:id="@+id/goal_team_a"
                 style="@style/ballStyle"
-                android:onClick="teamAGoal"
                 android:text="@string/goal"
                 />
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
 
-                <Button
-                    android:id="@+id/foul_button_a"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="8dp"
-                    android:layout_marginBottom="14dp"
-                    android:layout_weight="1"
-                    android:text="@string/foul"
-                    android:textSize="12sp"/>
-
-                <Button
-                    android:id="@+id/ejection_button_a"
-                    android:layout_width="0dp"
-                    android:layout_weight="1"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="8dp"
-
-                    android:text="@string/eject"
-                    android:textSize="12sp"/>
-
-            </LinearLayout>
         </LinearLayout>
 
 
@@ -215,31 +176,7 @@
 
                 />
 
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
 
-                <Button
-                    android:id="@+id/foul_button_b"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="8dp"
-                    android:layout_marginBottom="14dp"
-                    android:layout_weight="1"
-                    android:text="@string/foul"
-                    android:textSize="12sp"/>
-
-                <Button
-                    android:id="@+id/ejection_button_b"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="8dp"
-                    android:layout_weight="1"
-                    android:text="@string/eject"
-                    android:textSize="12sp"/>
-
-            </LinearLayout>
         </LinearLayout>
 
     </LinearLayout>
@@ -253,7 +190,6 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="14dp"
-        android:onClick="reset"
         android:text="@string/reset"/>
 
 </RelativeLayout>
