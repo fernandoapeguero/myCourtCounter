@@ -16,7 +16,7 @@
         android:layout_height="400dp"
         android:layout_marginTop="60dp"/>
 
-   
+
 
     <TextView
         android:id="@+id/header"
@@ -28,11 +28,24 @@
         android:textSize="56sp"
         android:textStyle="bold"/>
 
+
+    <Button
+        android:id="@+id/soccer_reset"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="14dp"
+        android:text="@string/reset"/>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:orientation="horizontal"
         android:layout_below="@+id/header"
-        android:orientation="horizontal">
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
 
         <LinearLayout
 
@@ -67,7 +80,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center_horizontal"
-                    android:hint="     Fouls                Ejections"/>
+                    android:hint="  Fouls                Ejections"/>
 
                 <LinearLayout
 
@@ -76,7 +89,7 @@
                     android:orientation="horizontal">
 
                     <TextView
-                        android:id="@+id/Fouls"
+                        android:id="@+id/Fouls_counter_teamA"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -85,7 +98,7 @@
                         android:textSize="24sp"/>
 
                     <TextView
-                        android:id="@+id/ejections"
+                        android:id="@+id/ejections_counter_teamA"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -102,6 +115,34 @@
                 style="@style/ballStyle"
                 android:text="@string/goal"
                 />
+
+
+            <LinearLayout
+
+                android:paddingTop="8dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/foul_button_team_a"
+                    android:text="@string/foul"
+                    android:layout_margin="8dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-medium"
+                    android:layout_height="wrap_content"/>
+
+                <Button
+                    android:id="@+id/eject_button_team_a"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="@string/eject"
+                    android:layout_margin="8dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"/>
+
+                </LinearLayout>
 
         </LinearLayout>
 
@@ -139,7 +180,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center_horizontal"
-                    android:hint="     Fouls                Ejections"/>
+                    android:hint="  Fouls                Ejections"/>
 
                 <LinearLayout
 
@@ -148,7 +189,7 @@
                     android:orientation="horizontal">
 
                     <TextView
-                        android:id="@+id/Fouls_teamb"
+                        android:id="@+id/fouls_counter_teamB"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -157,7 +198,7 @@
                         android:textSize="24sp"/>
 
                     <TextView
-                        android:id="@+id/ejections_teamB"
+                        android:id="@+id/ejections_counter_teamB"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -175,21 +216,35 @@
                 android:text="@string/goal"
 
                 />
+            <LinearLayout
 
+                android:paddingTop="8dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/foul_button_teamB"
+                    android:text="@string/foul"
+                    android:layout_margin="8dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-medium"
+                    android:layout_height="wrap_content"/>
+
+                <Button
+                    android:id="@+id/eject_button_team_b"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="@string/eject"
+                    android:layout_margin="8dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
 
         </LinearLayout>
 
     </LinearLayout>
-
-
-    <Button
-        android:id="@+id/soccer_reset"
-        android:layout_width="wrap_content"
-
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="14dp"
-        android:text="@string/reset"/>
 
 </RelativeLayout>
